@@ -1,0 +1,71 @@
+[
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "InsertSeminarData",
+    "RelativePath": "api/Seminar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "seminar",
+        "Type": "SeminarAPI.Services.SeminarData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "GetSeminarData",
+    "RelativePath": "api/Seminar/{docNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "UpdateSeminarData",
+    "RelativePath": "api/Seminar/{docNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "seminar",
+        "Type": "SeminarAPI.Services.SeminarData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "DeleteSeminarData",
+    "RelativePath": "api/Seminar/{docNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
