@@ -2,9 +2,10 @@
 
 namespace SeminarAPI.DTOs
 {
-    public class seminar
+    public class Seminar
     {
     }
+
     public class SeminarRegistrationDto
     {
         public string SemNo { get; set; }

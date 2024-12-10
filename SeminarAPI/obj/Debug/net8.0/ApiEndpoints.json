@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "GetAllSeminars",
+    "RelativePath": "api/Seminar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
     "Method": "InsertSeminarData",
     "RelativePath": "api/Seminar",
     "HttpMethod": "POST",

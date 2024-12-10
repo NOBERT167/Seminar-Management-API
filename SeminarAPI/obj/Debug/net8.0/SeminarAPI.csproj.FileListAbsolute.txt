@@ -243,3 +243,4 @@ C:\Users\Admin\source\repos\SeminarAPI\SeminarAPI\obj\Debug\net8.0\refint\Semina
 C:\Users\Admin\source\repos\SeminarAPI\SeminarAPI\obj\Debug\net8.0\SeminarAPI.pdb
 C:\Users\Admin\source\repos\SeminarAPI\SeminarAPI\obj\Debug\net8.0\SeminarAPI.genruntimeconfig.cache
 C:\Users\Admin\source\repos\SeminarAPI\SeminarAPI\obj\Debug\net8.0\ref\SeminarAPI.dll
+C:\Users\Admin\source\repos\SeminarAPI\SeminarAPI\obj\Debug\net8.0\SeminarAPI.sourcelink.json

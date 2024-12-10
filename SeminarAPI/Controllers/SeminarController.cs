@@ -15,71 +15,53 @@ namespace SeminarAPI.Controllers
             _seminarService = seminarService;
         }
 
-        // GET: api/Seminar/{docNo}
+        [HttpGet]
+        public async Task<IActionResult> GetAllSeminars()
+        {
+            var seminars = await _seminarService.GetAllSeminarsAsync();
+            return Ok(seminars);
+        }
+
         [HttpGet("{docNo}")]
         public async Task<IActionResult> GetSeminarData(string docNo)
         {
             var seminar = await _seminarService.GetSeminarDataAsync(docNo);
             if (seminar == null)
-            {
                 return NotFound($"Seminar with Document No '{docNo}' not found.");
-            }
             return Ok(seminar);
         }
 
-        // POST: api/Seminar
         [HttpPost]
         public async Task<IActionResult> InsertSeminarData([FromBody] SeminarData seminar)
         {
             if (seminar == null)
-            {
                 return BadRequest("Seminar data cannot be null.");
-            }
 
-            var success = await _seminarService.InsertSeminarDataAsync(
+            await _seminarService.InsertSeminarDataAsync(
                 seminar.Name,
                 seminar.SeminarDuration,
                 seminar.MinimumParticipants,
-                seminar.MaximumParticipants);
-
-            if (!success)
-            {
-                return StatusCode(500, "An error occurred while inserting seminar data.");
-            }
+                seminar.MaximumParticipants,
+                seminar.SeminarPrice);
 
             return Ok("Seminar data inserted successfully.");
         }
 
-        // PUT: api/Seminar/{docNo}
         [HttpPut("{docNo}")]
         public async Task<IActionResult> UpdateSeminarData(string docNo, [FromBody] SeminarData seminar)
         {
             if (seminar == null)
-            {
                 return BadRequest("Seminar data cannot be null.");
-            }
 
-            var success = await _seminarService.UpdateSeminarDataAsync(docNo, seminar.Name, seminar.SeminarDuration);
-
-            if (!success)
-            {
-                return StatusCode(500, "An error occurred while updating seminar data.");
-            }
+            await _seminarService.UpdateSeminarDataAsync(docNo, seminar.Name, seminar.SeminarDuration, seminar.SeminarPrice);
 
             return Ok("Seminar data updated successfully.");
         }
 
-        // DELETE: api/Seminar/{docNo}
         [HttpDelete("{docNo}")]
         public async Task<IActionResult> DeleteSeminarData(string docNo)
         {
-            var success = await _seminarService.DeleteSeminarDataAsync(docNo);
-
-            if (!success)
-            {
-                return StatusCode(500, "An error occurred while deleting seminar data.");
-            }
-
+            await _seminarService.DeleteSeminarDataAsync(docNo);
             return Ok("Seminar data deleted successfully.");
         }
     }
