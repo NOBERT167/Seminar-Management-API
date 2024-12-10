@@ -77,5 +77,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "RegisterSeminar",
+    "RelativePath": "api/Seminar/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "seminar",
+        "Type": "SeminarAPI.Services.SeminarRegData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "RegisterParticipantAsync",
+    "RelativePath": "api/Seminar/registerParticipant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "participant",
+        "Type": "SeminarAPI.Services.SeminarParticipant",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

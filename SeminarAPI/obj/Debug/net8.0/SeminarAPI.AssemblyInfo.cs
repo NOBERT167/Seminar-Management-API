@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SeminarAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51d08b6645cbfc321863a18b45deb17d193fb22c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43905dc03ce2be1fe7764dc20ce083056986f975")]
 [assembly: System.Reflection.AssemblyProductAttribute("SeminarAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SeminarAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

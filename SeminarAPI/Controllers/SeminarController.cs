@@ -64,5 +64,33 @@ namespace SeminarAPI.Controllers
             await _seminarService.DeleteSeminarDataAsync(docNo);
             return Ok("Seminar data deleted successfully.");
         }
+
+        //Register seminar endpoint
+        [HttpPost("register")]
+        public async Task<ActionResult> RegisterSeminar([FromBody] SeminarRegData seminar) 
+        {
+            if (seminar == null) 
+                return BadRequest("Seminar registration data cannot be null.");
+            await _seminarService.InsertSeminarRegDataAsync(
+                seminar.SeminarNo,
+                seminar.PersonNo,
+                seminar.RoomNo
+                ); 
+            return Ok("Seminar registered successfully.");
+        }
+
+        //Register participant endpoint
+        [HttpPost("registerParticipant")]
+        public async Task<ActionResult> RegisterParticipantAsync([FromBody] SeminarParticipant participant)
+        {
+            if (participant == null)
+                return BadRequest("Participant registration data cannot be null.");
+            await _seminarService.RegisterParticipantAsync(
+                participant.SeminarNo,
+                participant.CompanyNo,
+                participant.ParticipantNo
+                );
+            return Ok("Participant registered successfully.");
+        }
     }
 }

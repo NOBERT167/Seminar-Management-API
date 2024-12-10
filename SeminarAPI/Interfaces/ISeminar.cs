@@ -18,7 +18,7 @@ namespace SeminarAPI.Interfaces
         //Task<AppResponse<List<Contact>>.BaseResponse> GetContacts(string companyName);
         //Task<AppResponse<SeminarRegistrationItem>.BaseResponse> UpdateSeminarRegistration(string semHeaderNo, int lineNo, bool confirmed);
         //Task<AppResponse<List<SeminarRegistrationRespItem>>.BaseResponse> GetSeminarRegistrations(string participantContactNo, string? seminarNo = "");
-
-
+        Task<bool> InsertSeminarRegDataAsync(string seminarNo, string personNo, string roomNo);
+        Task<bool> RegisterParticipantAsync(string docNo, string companyNo, string participantNo);
     }
 }

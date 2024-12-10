@@ -53,7 +53,7 @@ namespace SeminarAPI.Services
             return new List<SeminarDataGet>();
         }
 
-        //GetAllSeminar doc no
+        //GetSeminar By Doc No.
         public async Task<SeminarDataGet> GetSeminarDataAsync(string docNo)
         {
             var url = $"{_baseUrl}/SeminarList?$filter=No eq '{docNo}'";
@@ -77,8 +77,7 @@ namespace SeminarAPI.Services
 
         }
 
-
-
+        //InsertSeminarData
         public async Task<bool> InsertSeminarDataAsync(string name, decimal seminarDuration, int minParticipants, int maxParticipants, decimal seminarPrice)
         {
             var client = _credentials.ObjNav();
@@ -95,11 +94,29 @@ namespace SeminarAPI.Services
             return true; // Assuming no exception indicates success
         }
 
+        //DeleteSeminar
         public async Task<bool> DeleteSeminarDataAsync(string docNo)
         {
             var client = _credentials.ObjNav();
             // Pass docNo directly as a string
             await client.DeleteSeminarDataAsync(docNo);
+            return true; // Assuming no exception indicates success
+        }
+
+        //Register Seminar
+        public async Task<bool> InsertSeminarRegDataAsync(string seminarNo, string personNo, string roomNo)
+        {
+            var client = _credentials.ObjNav();
+            // Pass parameters directly to the SOAP method
+            await client.InsertSeminarRegDataAsync(seminarNo, personNo, roomNo);
+            return true; // Assuming no exception indicates success
+        }
+
+        //Register participant
+        public async Task<bool> RegisterParticipantAsync(string docNo, string companyNo, string participantNo)
+        {
+            var client = _credentials.ObjNav();
+            await client.RegisterParticipantAsync(docNo, companyNo, participantNo);
             return true; // Assuming no exception indicates success
         }
 
@@ -115,6 +132,8 @@ namespace SeminarAPI.Services
                 return null; // Handle parsing errors gracefully
             }
         }
+
+
     }
     // SeminarData Class
     public class SeminarData
@@ -134,6 +153,20 @@ namespace SeminarAPI.Services
         public int Seminar_Duration { get; set; }
         public int Seminar_Price { get; set; }
 
+    }
+
+    public class SeminarRegData
+    {
+        public string SeminarNo { get; set; }
+        public string PersonNo { get; set; }
+        public string RoomNo { get; set; }
+    }
+
+    public class SeminarParticipant
+    {
+        public string SeminarNo { get; set; }
+        public string CompanyNo { get; set; }
+        public string ParticipantNo { get; set; }
     }
 
     //public class SeminarData
