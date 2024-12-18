@@ -1,5 +1,53 @@
 [
   {
+    "ContainingType": "SeminarAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SeminarAPI.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SeminarAPI.Controllers.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.AuthController",
+    "Method": "Update",
+    "RelativePath": "api/Auth/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SeminarAPI.Controllers.UpdateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SeminarAPI.Controllers.SeminarController",
     "Method": "GetAllSeminars",
     "RelativePath": "api/Seminar",
@@ -80,6 +128,38 @@
   },
   {
     "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "AddSeminarRoom",
+    "RelativePath": "api/Seminar/addRoom",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "room",
+        "Type": "SeminarAPI.Services.RoomData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "DeleteSeminarRoom",
+    "RelativePath": "api/Seminar/deleteRoom/{No}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "No",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
     "Method": "RegisterSeminar",
     "RelativePath": "api/Seminar/register",
     "HttpMethod": "POST",
@@ -105,6 +185,79 @@
       {
         "Name": "participant",
         "Type": "SeminarAPI.Services.SeminarParticipant",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "GetSeminarRegistrations",
+    "RelativePath": "api/Seminar/seminarRegistrations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "GetAllSeminarRegistrationById",
+    "RelativePath": "api/Seminar/SeminarRegistrations/{regNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "regNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "GetAllRooms",
+    "RelativePath": "api/Seminar/seminarRooms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "GetAllRoomsById",
+    "RelativePath": "api/Seminar/seminarRooms/{roomNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roomNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "UpdateSeminarRoom",
+    "RelativePath": "api/Seminar/updateRoom/{No}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "No",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "room",
+        "Type": "SeminarAPI.Services.RoomData",
         "IsRequired": true
       }
     ],

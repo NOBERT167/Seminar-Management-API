@@ -7,18 +7,25 @@ namespace SeminarAPI.Interfaces
     public interface ISeminar
     {
         //Task<string> GetSeminarDataAsync(string docNo);
-        Task<IEnumerable<SeminarDataGet>> GetAllSeminarsAsync();
-        Task<SeminarDataGet?> GetSeminarDataAsync(string docNo);
+        Task<IEnumerable<SeminarData>> GetAllSeminarsAsync();
+        Task<SeminarData?> GetSeminarDataAsync(string docNo);
         Task<bool> InsertSeminarDataAsync(string name, decimal seminarDuration, int minParticipants, int maxParticipants, decimal seminarPrice);
         Task<bool> UpdateSeminarDataAsync(string docNo, string name, decimal duration, decimal price);
         Task<bool> DeleteSeminarDataAsync(string docNo);
-        //Task<AppResponse<List<AvailableSeminar>>.BaseResponse> GetAvailableSeminars();
-        //Task<AppResponse<AvailableSeminar>.BaseResponse> GetAvailableSeminar(string seminarNo);
-        //Task<AppResponse<SeminarRegistrationItem>.BaseResponse> CreateSeminarRegistration(string semNo, string companyNo, string participantContactNo, bool? confirmation);
-        //Task<AppResponse<List<Contact>>.BaseResponse> GetContacts(string companyName);
-        //Task<AppResponse<SeminarRegistrationItem>.BaseResponse> UpdateSeminarRegistration(string semHeaderNo, int lineNo, bool confirmed);
-        //Task<AppResponse<List<SeminarRegistrationRespItem>>.BaseResponse> GetSeminarRegistrations(string participantContactNo, string? seminarNo = "");
-        Task<bool> InsertSeminarRegDataAsync(string seminarNo, string personNo, string roomNo);
+
+        //Seminar registration
+        Task<IEnumerable<SeminarRegistrationData>> GetAllSeminarRegistrationAsync();
+        Task<SeminarRegistrationData?> GetAllSeminarRegistrationByIdAsync(string regNo);
+
+        //To be fixed
+        Task<bool> InsertSeminarRegDataAsync(string seminarNo, DateTime startingDate, string personNo, string roomNo);
         Task<bool> RegisterParticipantAsync(string docNo, string companyNo, string participantNo);
+
+        //Room interfaces
+        Task<IEnumerable<RoomData>> GetAllRoomsAsync();
+        Task<RoomData?> GetAllRoomsByIdAsync(string No);
+        Task<bool> AddSeminarRoomAsync(string name, int maxParticipants, bool Internal);
+        Task<bool> UpdateSeminarRoomAsync(string No, string name, int maxParticipants, bool Internal);
+        Task<bool> DeleteSeminarRoomAsync(string No);
     }
 }
