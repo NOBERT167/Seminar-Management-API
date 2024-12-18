@@ -17,8 +17,40 @@
   },
   {
     "ContainingType": "SeminarAPI.Controllers.AuthController",
+    "Method": "LoginAdmin",
+    "RelativePath": "api/Auth/login/admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SeminarAPI.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.AuthController",
     "Method": "Register",
     "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SeminarAPI.Controllers.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.AuthController",
+    "Method": "RegisterAdmin",
+    "RelativePath": "api/Auth/register/admin",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

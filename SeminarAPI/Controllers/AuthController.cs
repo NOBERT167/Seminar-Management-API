@@ -56,6 +56,34 @@ namespace SeminarAPI.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
+
+        [HttpPost("register/admin")]
+        public async Task<IActionResult> RegisterAdmin([FromBody] RegisterRequest request)
+        {
+            try
+            {
+                var result = await _authService.RegisterAdminAsync(request.Username, request.Password, request.Email, request.Name);
+                return Ok(new { message = "Administrator registered successfully.", data = result });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost("login/admin")]
+        public async Task<IActionResult> LoginAdmin([FromBody] LoginRequest request)
+        {
+            try
+            {
+                var result = await _authService.LoginAdminAsync(request.Username, request.Password);
+                return Ok(new { message = "Admin login successful.", data = result });
+            }
+            catch (Exception ex)
+            {
+                return Unauthorized(new { message = ex.Message });
+            }
+        }
     }
 
     // DTOs for API requests

@@ -58,5 +58,40 @@ namespace SeminarAPI.Services
                 throw new Exception($"Failed to update user: {ex.Message}");
             }
         }
+        // Admin Register
+        public async Task<string> RegisterAdminAsync(string username, string password, string email, string name)
+        {
+            var client = _credentials.ObjNav();
+
+            try
+            {
+                // Call Business Central to register admin
+                var response = await client.CreateUserAsync(username, password, email, name);
+                // Additional logic to mark user as admin in Business Central (if needed)
+                return response.return_value;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Failed to register admin: {ex.Message}");
+            }
+        }
+
+        // Admin Login
+        public async Task<string> LoginAdminAsync(string username, string password)
+        {
+            var client = _credentials.ObjNav();
+
+            try
+            {
+                // Call Business Central to login as admin
+                var response = await client.LoginUserAsync(username, password);
+                // Additional logic to ensure admin privileges (if needed)
+                return response.return_value;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Admin login failed: {ex.Message}");
+            }
+        }
     }
 }
