@@ -25,8 +25,16 @@ namespace SeminarAPI
                 {
                     UseDefaultCredentials = true,
                 });
+
+            //Register instructor service
+            builder.Services.AddHttpClient<InstructorService>()
+                .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
+                {
+                    UseDefaultCredentials = true,
+                });
             builder.Services.AddScoped<ISeminar, SeminarService>();
             builder.Services.AddScoped<IAuth, AuthService>();
+            builder.Services.AddScoped<IInstructor, InstructorService>();
             builder.Services.AddSingleton<Credentials>();
 
 

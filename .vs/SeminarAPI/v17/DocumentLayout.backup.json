@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\interfaces\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\interfaces\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\controllers\\seminarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\controllers\\seminarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\services\\seminarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\services\\seminarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\interfaces\\iinstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\interfaces\\iinstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\services\\instructorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\services\\instructorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|c:\\users\\admin\\source\\repos\\seminarapi\\seminarapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C11891-7142-4F52-92A5-5CC50EA5A421}|SeminarAPI\\SeminarAPI.csproj|solutionrelative:seminarapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,67 +46,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "IInstructor.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Interfaces\\IInstructor.cs",
+              "RelativeDocumentMoniker": "SeminarAPI\\Interfaces\\IInstructor.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Interfaces\\IInstructor.cs",
+              "RelativeToolTip": "SeminarAPI\\Interfaces\\IInstructor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T16:48:30.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SeminarAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Program.cs",
+              "RelativeToolTip": "SeminarAPI\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T15:59:22.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Controllers\\InstructorController.cs",
+              "RelativeDocumentMoniker": "SeminarAPI\\Controllers\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Controllers\\InstructorController.cs",
+              "RelativeToolTip": "SeminarAPI\\Controllers\\InstructorController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwDQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T15:27:27.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SeminarController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Controllers\\SeminarController.cs",
               "RelativeDocumentMoniker": "SeminarAPI\\Controllers\\SeminarController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Controllers\\SeminarController.cs",
               "RelativeToolTip": "SeminarAPI\\Controllers\\SeminarController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwAIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAiwAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T10:48:26.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InstructorService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Services\\InstructorService.cs",
+              "RelativeDocumentMoniker": "SeminarAPI\\Services\\InstructorService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Services\\InstructorService.cs",
+              "RelativeToolTip": "SeminarAPI\\Services\\InstructorService.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwF4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T15:14:48.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IAuth.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Interfaces\\IAuth.cs",
-              "RelativeDocumentMoniker": "SeminarAPI\\Interfaces\\IAuth.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Interfaces\\IAuth.cs",
-              "RelativeToolTip": "SeminarAPI\\Interfaces\\IAuth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Title": "SeminarService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Services\\SeminarService.cs",
+              "RelativeDocumentMoniker": "SeminarAPI\\Services\\SeminarService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Services\\SeminarService.cs",
+              "RelativeToolTip": "SeminarAPI\\Services\\SeminarService.cs",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAqwBMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:49:41.806Z",
+              "WhenOpened": "2024-12-20T08:39:52.656Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "SeminarAPI\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Services\\AuthService.cs",
-              "RelativeToolTip": "SeminarAPI\\Services\\AuthService.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAIwF4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:54:40.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "SeminarAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "SeminarAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwFUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T10:05:24.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Program.cs",
-              "RelativeDocumentMoniker": "SeminarAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SeminarAPI\\SeminarAPI\\Program.cs",
-              "RelativeToolTip": "SeminarAPI\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:34:38.438Z"
             }
           ]
         }

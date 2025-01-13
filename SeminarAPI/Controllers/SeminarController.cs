@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Protocols.WsTrust;
 using NAVWS;
 using SeminarAPI.Services;
 
@@ -68,7 +70,7 @@ namespace SeminarAPI.Controllers
         }
 
         //Register seminar endpoint
-        [HttpPost("register")]
+        [HttpPost("register/{SeminarNo}")]
         public async Task<ActionResult> RegisterSeminar([FromBody] SeminarRegData seminar)
         {
             if (seminar == null) 
@@ -88,12 +90,37 @@ namespace SeminarAPI.Controllers
         {
             if (participant == null)
                 return BadRequest("Participant registration data cannot be null.");
-            await _seminarService.RegisterParticipantAsync(
+
+            try
+            {
+                var result = await _seminarService.RegisterParticipantAsync(
                 participant.SeminarNo,
                 participant.CompanyNo,
                 participant.ParticipantNo
-                );
-            return Ok("Participant registered successfully.");
+            );
+                return Ok("Participant registered successfully.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        //Get participants registartaions
+        [HttpGet("participantRegistrations/{participantNo}")]
+        public async Task<IActionResult> GetParticipantRegistrations(string participantNo)
+        {
+            try
+            {
+                var participantRegistrations = await _seminarService.GetRegistrationsByParticipantAsync(participantNo);
+                if (participantRegistrations == null || participantRegistrations.Count() == 0)
+                    return NotFound("No registrations found for this participant.");
+                return Ok(participantRegistrations);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         //Get all Seminar registration

@@ -80,6 +80,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SeminarAPI.Controllers.InstructorController",
+    "Method": "AddInstructor",
+    "RelativePath": "api/Instructor/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instructor",
+        "Type": "SeminarAPI.Services.InstructorData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.InstructorController",
+    "Method": "DeleteInstructor",
+    "RelativePath": "api/Instructor/delete/{instructorNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instructorNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.InstructorController",
+    "Method": "GetInstructorDataAsync",
+    "RelativePath": "api/Instructor/instructor/{instructorNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instructorNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.InstructorController",
+    "Method": "GetAllInstructors",
+    "RelativePath": "api/Instructor/instructors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.InstructorController",
+    "Method": "UpdateInstructor",
+    "RelativePath": "api/Instructor/update/{instructorNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instructorNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "instructor",
+        "Type": "SeminarAPI.Services.InstructorData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SeminarAPI.Controllers.SeminarController",
     "Method": "GetAllSeminars",
     "RelativePath": "api/Seminar",
@@ -192,8 +271,24 @@
   },
   {
     "ContainingType": "SeminarAPI.Controllers.SeminarController",
+    "Method": "GetParticipantRegistrations",
+    "RelativePath": "api/Seminar/participantRegistrations/{participantNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "participantNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SeminarAPI.Controllers.SeminarController",
     "Method": "RegisterSeminar",
-    "RelativePath": "api/Seminar/register",
+    "RelativePath": "api/Seminar/register/{SeminarNo}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -201,6 +296,11 @@
       {
         "Name": "seminar",
         "Type": "SeminarAPI.Services.SeminarRegData",
+        "IsRequired": true
+      },
+      {
+        "Name": "SeminarNo",
+        "Type": "",
         "IsRequired": true
       }
     ],

@@ -17,9 +17,10 @@ namespace SeminarAPI.Interfaces
         Task<IEnumerable<SeminarRegistrationData>> GetAllSeminarRegistrationAsync();
         Task<SeminarRegistrationData?> GetAllSeminarRegistrationByIdAsync(string regNo);
 
-        //To be fixed
+        //Registration
         Task<bool> InsertSeminarRegDataAsync(string seminarNo, DateTime startingDate, string personNo, string roomNo);
         Task<bool> RegisterParticipantAsync(string docNo, string companyNo, string participantNo);
+        Task<string> GetRegistrationsByParticipantAsync(string participantNo);
 
         //Room interfaces
         Task<IEnumerable<RoomData>> GetAllRoomsAsync();
@@ -27,5 +28,6 @@ namespace SeminarAPI.Interfaces
         Task<bool> AddSeminarRoomAsync(string name, int maxParticipants, bool Internal);
         Task<bool> UpdateSeminarRoomAsync(string No, string name, int maxParticipants, bool Internal);
         Task<bool> DeleteSeminarRoomAsync(string No);
+
     }
 }

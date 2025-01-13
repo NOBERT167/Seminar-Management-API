@@ -108,8 +108,32 @@ namespace SeminarAPI.Services
         public async Task<bool> RegisterParticipantAsync(string docNo, string companyNo, string participantNo)
         {
             var client = _credentials.ObjNav();
-            await client.RegisterParticipantAsync(docNo, companyNo, participantNo);
-            return true; // Assuming no exception indicates success
+            try
+            {
+                var response = await client.RegisterParticipantAsync(docNo, companyNo, participantNo);
+                return response.return_value; // Assuming the JSON response is in `return_value`
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions gracefully
+                throw new Exception($"Failed to register participant: {ex.Message}");
+            }
+        }
+
+        //Get participants registrations
+        public async Task<string> GetRegistrationsByParticipantAsync(string participantNo)
+        {
+            var client = _credentials.ObjNav(); 
+            try 
+            {
+                var response = await client.GetRegistrationsByParticipantAsync(participantNo);
+                return response.return_value; 
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions gracefully
+                throw new Exception($"Failed to get registrations: {ex.Message}");
+            }
         }
 
         private SeminarData? ParseSeminarData(string rawData)
@@ -273,6 +297,7 @@ namespace SeminarAPI.Services
 
 
 
+
     }
     // SeminarData Class
     public class SeminarData
@@ -320,6 +345,14 @@ namespace SeminarAPI.Services
         public int Registered_Participants { get; set; }
         public int Maximum_Participants { get; set; }
     }
+    //public class InstructorData
+    //{
+    //    public string No { get; set;}
+    //    public string Name { get; set; }
+    //    public string Type { get; set; }
+    //}
+    
+
 
     //public enum Status
     //{
